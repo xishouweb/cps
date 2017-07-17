@@ -604,6 +604,6 @@ class IndexController extends HomebaseController {
     }
 
     private function doZygg(){
-        $this->display(":zygg");
+        $this->display(":rbutton");
     }
 }
