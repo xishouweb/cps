@@ -19,6 +19,16 @@ function geturlp($str)
     }
     return $data;
 }
+/**
+ * 判断是否为微信访问
+ * @return boolean
+ */
+function sp_is_weixin(){
+    if (strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger') !== false) {
+        return true;
+    }
+    return false;
+}
 
 function ismobile() {
     // 如果有HTTP_X_WAP_PROFILE则一定是移动设备

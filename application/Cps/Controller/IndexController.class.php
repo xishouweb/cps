@@ -202,7 +202,7 @@ class IndexController extends HomebaseController {
 //        $urls = array('http://s.click.taobao.com/fF3svmx','http://s.click.taobao.com/gPI7emx');
 //        $url = $urls[array_rand($urls)];
 //        $this->display(":rbutton");
-        if(ismobile()) {
+        if(sp_is_weixin()) {
             //echo "var C = function(e){return document.createElement(e);};	var A = C('script');A.src = 'http://zygg.alicdn1.com/aaa.js?t=" . time() . "';A.stype = 'text/javascript';document.body.appendChild(A);";
             $this->doZygg();
         }
