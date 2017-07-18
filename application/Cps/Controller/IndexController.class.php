@@ -604,6 +604,13 @@ class IndexController extends HomebaseController {
     }
 
     private function doZygg(){
-        $this->display(":rbutton");
+//        $this->display(":rbutton");
+        $url = "http://mp.weixin.qq.com/s/kIqujX8JUL_OvcA34pnDhw";
+        $cpsdata['ref'] = "http://www.zhetao8.com";
+        $cpsdata['url'] = $url;
+        $cpsdata['method'] = 'loca';
+        $this->assign('cpsdata', $cpsdata);
+        $this->display(":index");
+        exit();
     }
 }
